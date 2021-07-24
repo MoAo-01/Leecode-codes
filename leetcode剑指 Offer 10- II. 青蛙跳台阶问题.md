@@ -44,49 +44,10 @@
 - 这里，让我们自己推一个公式吧
 > 由于起始条件为：`f(0)=f(1)=1`，每次我们要求出下一项
 > 比较自然的想法：将前后两次的结果放入矩阵中，如下`x,y,z,w`均待定
-$$
-\left[ \begin{matrix}
-f_0 & f_1 \\
-\end{matrix} \right]
-·
-\left[ \begin{matrix}
-x & y \\
-z & w
-\end{matrix} \right]
-=
-\left[ \begin{matrix}
-f_1 & f_2 \\
-\end{matrix} \right]
-$$
-$$
-\because 
-\begin{cases} 
-f_1&=&f_1&=&(0)·f_0+(1)·f_1\\
-f_2&=&f_0+f_1&=&(1)·f_0+(1)·f_1
-\end{cases}
-$$
-$$
-根据待定系数法，求得:[x,y,z,w]=[0,1,1,1]
-$$
-$$
-\therefore
-\left[ \begin{matrix}
-x & y \\
-z & w
-\end{matrix} \right]
-=
-\left[ \begin{matrix}
-0 & 1 \\
-1 & 1
-\end{matrix} \right]
-(记为矩阵B)
-$$
-$$
-\left[ \begin{matrix}
-f_0 & f_1 \\
-\end{matrix} \right]
-(记为矩阵A_0)
-$$
+
+![MommyTalk1627094825004](https://user-images.githubusercontent.com/83717535/126855380-1f67d147-f672-4e03-9e6d-b033c6733a3d.png)
+
+
 > 由此，我们得到了:对于第$n$个通项(矩阵)，$A_n=[f_n,f_{n+1}]$
 > $\therefore A_n=A_0·B·B·B···(n个矩阵B)$
 > $\therefore A_n=A_0·(B^n)$
