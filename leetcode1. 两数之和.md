@@ -29,7 +29,7 @@ public:
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-		vector<int>res;
+	vector<int>res;
         int size=nums.size();
 		for(int i=0;i<size;i++)
 			for(int j=i+1;j<size;j++)			
