@@ -9,3 +9,16 @@ public:
     }
 };
 ```
+```cpp
+class Solution {
+public:
+    int reverse(int x) {
+        auto s=to_string(x);
+        auto first=begin(s);
+        if(x<0)++first;
+        std::reverse(first,end(s));
+        try{return stoi(s);}
+        catch(...){return 0;}
+    }
+};
+```
