@@ -28,13 +28,13 @@ class Solution {
 ```python
 class Solution:
     def generateMatrix(self, n: int) -> List[List[int]]:
-    ret=[[0 for _ in range(n)]for _ in range(n)]
-    i,j,di,dj=0,0,0,1
-    for a in range(n**2):
-        ret[i][j]=a+1
-        if ret[(i+di)%n][(j+dj)%n]>0:
-            di,dj=dj,-di
-        i+=di
-        j+=dj
-    return ret
+        ret=[[0 for _ in range(n)]for _ in range(n)]
+        i,j,di,dj=0,0,0,1
+        for a in range(n**2):
+            ret[i][j]=a+1
+            if ret[(i+di)%n][(j+dj)%n]>0:
+                di,dj=dj,-di
+            i+=di
+            j+=dj
+        return ret
 ```
