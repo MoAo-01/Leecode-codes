@@ -1,6 +1,6 @@
 ## Leecode-codes
 
-**These codes are Moao's personal solutions.**
+**These codes are MoAo's personal solutions.**
 
 [Please click here to link my leecode UI](https://leetcode-cn.com/u/moao)
 
