@@ -9,19 +9,19 @@
 //https://github.com/MoAo-01/Leecode-codes
 class Solution {
 public:
-    bool check(string&s,vector<string>&p){
+    bool check(string&c,vector<string>&s){
         unordered_map<char,string>c2s;
         unordered_map<string,char>s2c;
-        for(int i=0;i<s.size();i++){
-            if(s2c.count(p[i])>0&&s2c[p[i]]!=s[i])return false;            
-            if(c2s.count(s[i])>0&&c2s[s[i]]!=p[i])return false;
-            s2c[p[i]]=s[i];
-            c2s[s[i]]=p[i];            
+        for(int i=0;i<c.size();i++){
+            if(s2c.count(s[i])>0&&s2c[s[i]]!=c[i])return false;            
+            if(c2s.count(c[i])>0&&c2s[c[i]]!=s[i])return false;
+            s2c[s[i]]=c[i];
+            c2s[c[i]]=s[i];            
         }
         return true;
     }
 
-    vector<string> getStrings(int&mask,int&m,string&s){
+    vector<string> getStrings(int&mask,int&m,string&s){        
         vector<int>id;
         id.push_back(0);
         for(int i=0;i<m;i++)if(mask&(1<<i))id.push_back(i);
