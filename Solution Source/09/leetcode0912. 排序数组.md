@@ -26,7 +26,6 @@ public:
         for(auto&v:r_a)a.push_back(v);
     }
 
-
     vector<int> sortArray(vector<int>& nums) {
         random_shuffle(begin(nums),end(nums));
         quick_sort(nums);
